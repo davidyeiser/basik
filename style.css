@@ -9,30 +9,30 @@ License:     GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-
+  
 
 /*
 
   i. On Cascading Style Sheets (CSS)
   ---
 
-	CSS is a language used to style markup. It sets the look and feel of a
-	website and along with JavaScript controls the user experience of a site.
-	You'll find it lovely and infuriating.
+  CSS is a language used to style markup. It sets the look and feel of a
+  website and along with JavaScript controls the user experience of a site.
+  You'll find it lovely and infuriating.
 
-	CSS is laid out in a document like this and then referenced by a website
-	via a <link> tag in the <head> of a site. (See head.php and index.php).
-	The browser loads the style sheet and renders the style commands.
+  CSS is laid out in a document like this and then referenced by a website
+  via a <link> tag in the <head> of a site. (See head.php and index.php).
+  The browser loads the style sheet and renders the style commands.
 
-	There is no specific structure you must follow when you organize CSS.
-	Most of the time it's personal preference. In the style sheet for this
-	theme for example, I define the "global" styles first and then write the
-	styles for the site header (logo, navigation, etc.) and then move to
-	individual views (article, page).
+  There is no specific structure you must follow when you organize CSS.
+  Most of the time it's personal preference. In the style sheet for this
+  theme for example, I define the "global" styles first and then write the
+  styles for the site header (logo, navigation, etc.) and then move to
+  individual views (article, page).
 
   However, the one thing you must be aware of is the cascade. This is the power
-	(or bane) of CSS. You'll start to pick up on it as you write CSS, but let me
-	give you a quick example.
+  (or bane) of CSS. You'll start to pick up on it as you write CSS, but let me
+  give you a quick example.
 
   This is a class named "red" that styles text to be the color red:
   .red { color: red }
@@ -65,7 +65,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   there is nothing in the "blue" class that would override the bold text.
 
   Don't be discouraged if you don't quite get it yet. All it takes to learn
-	is to change something in the code and then see what happens.
+  is to change something in the code and then see what happens.
 
 */
 
@@ -80,7 +80,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   styles for all elements so they have no default styles. This was put together
   by Eric Meyer a long time ago and is still the best way to reset browsers.
 
-	You can skip over this section. There is no need to change anything here.
+  You can skip over this section. There is no need to change anything here.
 
   http://meyerweb.com/eric/tools/css/reset/
   v2.0 | 20110126
@@ -101,35 +101,35 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* I added this one for Internet Explorer */
@@ -141,130 +141,130 @@ hr {
 
 /*
 
-	1.0 GLOBAL STYLES
-	---
+  1.0 GLOBAL STYLES
+  ---
 */
 
 html {
-	height: 100%;
+  height: 100%;
 }
 body {
-	box-sizing: border-box;
-	height: 100%;
-	/* This specifics the default font to be the operating system's system font */
-	font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
-	font-size: 16px;
-	font-style: normal;
-	font-weight: normal;
-	color: #1e1f22;
-	background-color: #fff;
-	/*
-	  The "-webkit" is a browser prefix. This is how browser makers first
-		implement experimental CSS features as they work towards standardization.
-		They are also used for very specific functionality, like adjusting text
-		on an iPhone. Don't worry about this for now, just leave it as is.
-	*/
-	-webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  /* This specifics the default font to be the operating system's system font */
+  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  color: #1e1f22;
+  background-color: #fff;
+  /*
+    The "-webkit" is a browser prefix. This is how browser makers first
+    implement experimental CSS features as they work towards standardization.
+    They are also used for very specific functionality, like adjusting text
+    on an iPhone. Don't worry about this for now, just leave it as is.
+  */
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
-	text-decoration: none;
-	color: navy;
+  text-decoration: none;
+  color: navy;
 }
 a:visited {
-	color: navy;
+  color: navy;
 }
 a:hover, a:focus {
-	color: deeppink;
+  color: deeppink;
 }
 
 ::selection {
-	color: #fff;
-	background-color: #1e1f22;
+  color: #fff;
+  background-color: #1e1f22;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	text-rendering: optimizelegibility
+  text-rendering: optimizelegibility
 }
 
 
 /*
   1.1 Layout
-	---
-	.frame is the class that centers the site layout.
-	.measure sets the standard width for long text content
-	(always use .measure within .frame)
+  ---
+  .frame is the class that centers the site layout.
+  .measure sets the standard width for long text content
+  (always use .measure within .frame)
 */
 
 .frame {
-	box-sizing: border-box;
-	display: block;
-	width: 82%;
-	margin-right: auto;
-	margin-left: auto;
-	position: relative;
+  box-sizing: border-box;
+  display: block;
+  width: 82%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
 }
 @media (min-width: 960px) {
-	.frame {
-		width: 74%;
-	}
+  .frame {
+    width: 74%;
+  }
 }
 @media (min-width: 1680px) {
-	.frame {
-		width: 60.8%;
-	}
+  .frame {
+    width: 60.8%;
+  }
 }
 
 
 @media (min-width: 640px) {
-	.measure {
-		width: 95%;
-	}
+  .measure {
+    width: 95%;
+  }
 }
 @media (min-width: 960px) {
-	.measure {
-		width: 85%;
-		/*
-		  calc() is a neat CSS property that calculates the result of the arguments
-			inside of the parenthesis and uses that as the property value. One of the
-			great benefits is it allows you to mix units.
+  .measure {
+    width: 85%;
+    /*
+      calc() is a neat CSS property that calculates the result of the arguments
+      inside of the parenthesis and uses that as the property value. One of the
+      great benefits is it allows you to mix units.
 
-			Note that there must be a space between the operator.
-			BAD:  calc(10%-50px)
-			GOOD: calc(10% - 50px)
-		*/
-		margin-left: calc(12% - 18px);
-	}
+      Note that there must be a space between the operator.
+      BAD:  calc(10%-50px)
+      GOOD: calc(10% - 50px)
+    */
+    margin-left: calc(12% - 18px);
+  }
 }
 @media (min-width: 1240px) {
-	.measure {
-		width: 68%;
-		max-width: 720px;
-		margin-left: calc(50% - (720px / 2) - 18px);
-	}
+  .measure {
+    width: 68%;
+    max-width: 720px;
+    margin-left: calc(50% - (720px / 2) - 18px);
+  }
 }
 @media (min-width: 1680px) {
-	.measure {
-		width: 53.5916824197%;
-		margin-left: calc(50% - (720px / 2) - 18px);
-	}
+  .measure {
+    width: 53.5916824197%;
+    margin-left: calc(50% - (720px / 2) - 18px);
+  }
 }
 
 
 /*
   1.2 Site Setup
-	---
-	This is what anchors the footer to the bottom of the page.
-	These properties are part of CSS's Flexbox layout system. It's a newer feature
-	of CSS and very powerful for layout control. If you're new to CSS don't worry
-	about it for now, there are simpler aspects to master first.
+  ---
+  This is what anchors the footer to the bottom of the page.
+  These properties are part of CSS's Flexbox layout system. It's a newer feature
+  of CSS and very powerful for layout control. If you're new to CSS don't worry
+  about it for now, there are simpler aspects to master first.
 */
 
 .site {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -277,208 +277,208 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .site-header {
-	position: relative;
+  position: relative;
 }
 
 .identity {
-	box-sizing: border-box;
-	display: inline-block;
-	max-width: 80%;
-	/*
-	  The margin and padding pattern below adds an
-	  extra clickable area around the logo.
-	*/
-	margin: -10px;
-	padding: 10px;
-	position: relative;
-	/* To match .frame edge */
-	left: calc((100% - 82%) / 2);
-	top: 22px;
-	font-size: 18px;
-	font-weight: 900;
-	line-height: 1.4;
-	text-transform: uppercase;
-	border-bottom: 0;
-	border-radius: 8px;
-	z-index: 1;
+  box-sizing: border-box;
+  display: inline-block;
+  max-width: 80%;
+  /*
+    The margin and padding pattern below adds an
+    extra clickable area around the logo.
+  */
+  margin: -10px;
+  padding: 10px;
+  position: relative;
+  /* To match .frame edge */
+  left: calc((100% - 82%) / 2);
+  top: 22px;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.4;
+  text-transform: uppercase;
+  border-bottom: 0;
+  border-radius: 8px;
+  z-index: 1;
 }
 .identity:hover,
 .identity:focus {
-	/* RGB color value for CSS keyword 'navy' */
-	background-color: rgba(0, 0, 128, 0.05);
+  /* RGB color value for CSS keyword 'navy' */
+  background-color: rgba(0, 0, 128, 0.05);
 }
 @media (min-width: 960px) {
-	.identity {
-		max-width: 140px;
-		position: fixed;
-		left: 60px;
-		top: 56px;
-	}
+  .identity {
+    max-width: 140px;
+    position: fixed;
+    left: 60px;
+    top: 56px;
+  }
 }
 @media (min-width: 1680px) {
-	.identity {
-		left: 84px;
-	}
+  .identity {
+    left: 84px;
+  }
 }
 
 .menu-control {
-	display: block;
-	width: 28px;
-	height: 17px;
-	margin: -10px;
-	padding: 10px;
-	position: absolute;
-	right: 9%;
-	top: 22px;
-	z-index: 1;
+  display: block;
+  width: 28px;
+  height: 17px;
+  margin: -10px;
+  padding: 10px;
+  position: absolute;
+  right: 9%;
+  top: 22px;
+  z-index: 1;
 }
 /*
   Instead of using an SVG for a menu icon I have created it using borders and
-	a box shadow on the pseudo element, "after". What this does is add a stylable
-	text "node" after the .menu-control <a> tag. The text content is set with the
-	"content" property (in our case set to nothing via "", as opposed to "text")
-	and is then styled to look like a menu icon.
+  a box shadow on the pseudo element, "after". What this does is add a stylable
+  text "node" after the .menu-control <a> tag. The text content is set with the
+  "content" property (in our case set to nothing via "", as opposed to "text")
+  and is then styled to look like a menu icon.
 
-	There is a lot you can do with CSS.
+  There is a lot you can do with CSS.
 */
 .menu-control:after {
-	content: "";
-	display: block;
-	width: 28px;
-	height: 4px;
-	position: absolute;
-	left: 10px;
-	top: 10px;
-	border-top: 3px solid rgba(30, 31, 34, 0.5);
-	border-bottom: 3px solid rgba(30, 31, 34, 0.5);
-	box-shadow: 0 4px 0 0 #fff, 0 7px 0 0 rgba(30, 31, 34, 0.5);
+  content: "";
+  display: block;
+  width: 28px;
+  height: 4px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border-top: 3px solid rgba(30, 31, 34, 0.5);
+  border-bottom: 3px solid rgba(30, 31, 34, 0.5);
+  box-shadow: 0 4px 0 0 #fff, 0 7px 0 0 rgba(30, 31, 34, 0.5);
 }
 .menu-control-active:after,
 .menu-control:hover:after,
 .menu-control:focus:after {
-	border-color: rgba(30, 31, 34, 0.9);
-	box-shadow: 0 4px 0 0 #fff, 0 7px 0 0 rgba(30, 31, 34, 0.9);
+  border-color: rgba(30, 31, 34, 0.9);
+  box-shadow: 0 4px 0 0 #fff, 0 7px 0 0 rgba(30, 31, 34, 0.9);
 }
 @media (min-width: 960px) {
-	.menu-control {
-		display: none;
-	}
+  .menu-control {
+    display: none;
+  }
 }
 
 
 /*
   2.1 Navigation
-	---
+  ---
 */
 
 /*
   The "nav-list" class is used for the main navigation and the meta links in the
-	footer. Properties that are shared between the two are included in the
-	.nav-list series of rules.
+  footer. Properties that are shared between the two are included in the
+  .nav-list series of rules.
 
-	Properties that are unique to each are declared further down the cascade.
-	When you combine the class names (e.g. <ul class="main-nav-list nav-list">)
-	the properties are combined to make up the complete styling.
+  Properties that are unique to each are declared further down the cascade.
+  When you combine the class names (e.g. <ul class="main-nav-list nav-list">)
+  the properties are combined to make up the complete styling.
 */
 .nav-list {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 960px) {
-	.nav-list {
-		flex-direction: row
-	}
+  .nav-list {
+    flex-direction: row
+  }
 }
 .nav-list li {
-	position: relative;
+  position: relative;
 }
 .nav-list li:before {
-	content: "";
-	position: absolute;
+  content: "";
+  position: absolute;
 }
 .nav-list li:first-child {
-	margin-left: 0;
+  margin-left: 0;
 }
 .nav-list li:first-child:before {
-	content: "";
+  content: "";
 }
 @media (min-width: 960px) {
-	.nav-list li:before {
-		content: " · "
-	}
+  .nav-list li:before {
+    content: " · "
+  }
 }
 
 
 /*
   2.2 Main Navigation
-	---
+  ---
 */
 
 /*
-	The CSS here hides the main nav menu visually while still
-	making the navigation available to screen readers.
+  The CSS here hides the main nav menu visually while still
+  making the navigation available to screen readers.
 */
 .main-nav {
-	width: 1px;
+  width: 1px;
   height: 1px;
   position: absolute;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
 @media (min-width: 960px) {
-	/* This reverses the hiding mechanism above to show the main nav */
-	.main-nav {
-		width: auto;
-	  height: auto;
-	  position: inherit;
-	  overflow: visible;
-	  clip: auto;
-	}
+  /* This reverses the hiding mechanism above to show the main nav */
+  .main-nav {
+    width: auto;
+    height: auto;
+    position: inherit;
+    overflow: visible;
+    clip: auto;
+  }
 }
 
 .main-nav-list {
-	padding-top: 48px;
+  padding-top: 48px;
 }
 .main-nav-list li {
-	line-height: 1.565;
+  line-height: 1.565;
 }
 .main-nav-list li:before {
-	margin-top: 2px;
-	margin-left: -12px;
-	opacity: 0.25;
+  margin-top: 2px;
+  margin-left: -12px;
+  opacity: 0.25;
 }
 @media (min-width: 960px) {
-	.main-nav-list {
-		padding-top: 56px;
-	}
-	.main-nav-list li {
-		margin-left: 20px;
-	}
+  .main-nav-list {
+    padding-top: 56px;
+  }
+  .main-nav-list li {
+    margin-left: 20px;
+  }
 }
 
 .main-nav-list a {
-	display: block;
-	width: auto;
-	margin-bottom: -2px;
-	padding-bottom: 2px;
-	font-size: 18px;
-	line-height: 1.565;
-	color: #1e1f22;
-	border-bottom: 2px solid transparent;
-	opacity: 0.5;
+  display: block;
+  width: auto;
+  margin-bottom: -2px;
+  padding-bottom: 2px;
+  font-size: 18px;
+  line-height: 1.565;
+  color: #1e1f22;
+  border-bottom: 2px solid transparent;
+  opacity: 0.5;
 }
 .main-nav-list a:visited {
-	color: #1e1f22;
+  color: #1e1f22;
 }
 .main-nav-list a:hover,
 .main-nav-list a:focus {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 @media (min-width: 960px) {
-	.main-nav-list a:hover,
-	.main-nav-list a:focus {
-		border-bottom-color: rgba(30, 31, 34, 0.2);
-	}
+  .main-nav-list a:hover,
+  .main-nav-list a:focus {
+    border-bottom-color: rgba(30, 31, 34, 0.2);
+  }
 }
 
 /*
@@ -487,14 +487,14 @@ h1, h2, h3, h4, h5, h6 {
 */
 .current-menu-item a,
 .current-menu-item a:visited {
-	font-weight: 700;
+  font-weight: 700;
 }
 @media (min-width: 960px) {
-	.current-menu-item a,
-	.current-menu-item a:visited {
-		font-weight: normal;
-		border-bottom-color: rgba(30, 31, 34, 0.1);
-	}
+  .current-menu-item a,
+  .current-menu-item a:visited {
+    font-weight: normal;
+    border-bottom-color: rgba(30, 31, 34, 0.1);
+  }
 }
 
 
@@ -502,54 +502,54 @@ h1, h2, h3, h4, h5, h6 {
 /*
 
   3.0 FOOTER
-	---
+  ---
   Styles for the site footer.
 */
 
 .site-footer {
-	box-sizing: border-box;
-	padding-top: 68px;
-	padding-bottom: 48px;
+  box-sizing: border-box;
+  padding-top: 68px;
+  padding-bottom: 48px;
 }
 
 .copyright {
-	font-size: 15px;
-	line-height: 1.6;
-	color: rgba(30, 31, 34, 0.5);
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(30, 31, 34, 0.5);
 }
 
 .meta-links-list {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 .meta-links-list li {
-	line-height: 1.565;
+  line-height: 1.565;
 }
 .meta-links-list li:before {
-	margin-top: 1px;
-	margin-left: -10px;
-	opacity: 0.25;
+  margin-top: 1px;
+  margin-left: -10px;
+  opacity: 0.25;
 }
 @media (min-width: 960px) {
-	.meta-links-list li {
-		margin-left: 16px;
-	}
+  .meta-links-list li {
+    margin-left: 16px;
+  }
 }
 
 .meta-links-list a {
-	margin-bottom: -2px;
-	padding-bottom: 2px;
-	font-size: 15px;
-	line-height: 1.565;
-	color: rgba(30, 31, 34, 0.5);
-	border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  padding-bottom: 2px;
+  font-size: 15px;
+  line-height: 1.565;
+  color: rgba(30, 31, 34, 0.5);
+  border-bottom: 2px solid transparent;
 }
 .meta-links-list a:visited {
-	color: rgba(30, 31, 34, 0.5);
+  color: rgba(30, 31, 34, 0.5);
 }
 .meta-links-list a:hover,
 .meta-links-list a:focus {
-	color: rgba(30, 31, 34, 0.7);
-	border-bottom-color: rgba(30, 31, 34, 0.22);
+  color: rgba(30, 31, 34, 0.7);
+  border-bottom-color: rgba(30, 31, 34, 0.22);
 }
 
 
@@ -557,34 +557,34 @@ h1, h2, h3, h4, h5, h6 {
 /*
 
   4.0 HOME PAGE
-	---
+  ---
 */
 
 /*
   .site-tagline below styles the main lead text on the home page.
-	The font-size property value is calculated using the base font size of the
-	body text and then increasing two steps on a perfect fifth scale.
+  The font-size property value is calculated using the base font size of the
+  body text and then increasing two steps on a perfect fifth scale.
 
-	If you're interested, you can start exploring type scales here:
-	http://type-scale.com
+  If you're interested, you can start exploring type scales here:
+  http://type-scale.com
 */
 .site-tagline {
-	margin-top: 51px;
-	margin-bottom: 18px;
-	font-weight: 900;
-	font-size: calc(18px * 1.5 * 1.5);
-	line-height: 1.125;
-	text-transform: uppercase;
+  margin-top: 51px;
+  margin-bottom: 18px;
+  font-weight: 900;
+  font-size: calc(18px * 1.5 * 1.5);
+  line-height: 1.125;
+  text-transform: uppercase;
 }
 @media (min-width: 640px) {
-	.site-tagline {
-		width: 80%;
-	}
+  .site-tagline {
+    width: 80%;
+  }
 }
 @media (min-width: 960px) {
-	.site-tagline {
-		width: 68%;
-	}
+  .site-tagline {
+    width: 68%;
+  }
 }
 
 .entry-block {
@@ -593,35 +593,35 @@ h1, h2, h3, h4, h5, h6 {
 
 /*
   The "+" is a CSS operator that targets the entity on the right if it comes
-	immediately after the entity on the left. So in this case the first
-	.entry-block will have a top margin of 48px, while all other subsequent
-	.entry-block's will have a top margin of 10px due to the override here.
+  immediately after the entity on the left. So in this case the first
+  .entry-block will have a top margin of 48px, while all other subsequent
+  .entry-block's will have a top margin of 10px due to the override here.
 
-	This allows us to set a larger margin on the first one to give it visual
-	separation from the main title above it and then use smaller margins on the
-	rest to keep them as a coherent unit on the page.
+  This allows us to set a larger margin on the first one to give it visual
+  separation from the main title above it and then use smaller margins on the
+  rest to keep them as a coherent unit on the page.
 
-	You don't have to do it this way of course. There are many other ways to
-	accomplish the same visual result. You could keep the top margin of 10px on
-	all .entry-block's and add a bottom padding of 38px on the main title
-	for example.
+  You don't have to do it this way of course. There are many other ways to
+  accomplish the same visual result. You could keep the top margin of 10px on
+  all .entry-block's and add a bottom padding of 38px on the main title
+  for example.
 */
 .entry-block + .entry-block {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .entry-link {
-	color: inherit;
+  color: inherit;
 }
 .entry-link:visited {
-	color: inherit;
+  color: inherit;
 }
 .entry-link:hover .preview-title,
 .entry-link:focus .preview-title,
 .entry-link:hover .preview-publish-date,
 .entry-link:focus .preview-publish-date {
-	color: deeppink;
-	opacity: 1.0;
+  color: deeppink;
+  opacity: 1.0;
 }
 
 
@@ -633,49 +633,49 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .entry-header {
-	padding-top: 48px;
+  padding-top: 48px;
 }
 
 .entry-link {
-	color: inherit;
-	border: 0;
+  color: inherit;
+  border: 0;
 }
 
 .title {
-	margin-top: 10px;
-	font-size: calc(18px * 1.5);
-	font-style: normal;
-	font-weight: 600;
-	line-height: 1.2;
+  margin-top: 10px;
+  font-size: calc(18px * 1.5);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
 }
 @media (min-width: 960px) {
-	.title {
-		width: 68%;
-		font-size: calc(19px * 1.5);
-	}
+  .title {
+    width: 68%;
+    font-size: calc(19px * 1.5);
+  }
 }
 
 .preview-title {
-	display: inline;
-	margin-right: 8px;
-	font-size: 19px;
-	font-weight: 500;
-	line-height: 1.4
+  display: inline;
+  margin-right: 8px;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.4
 }
 
 .publish-date {
-	font-size: 12px;
-	font-weight: 900;
-	line-height: 1.565;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	opacity: 0.4;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.565;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.4;
 }
 
 .preview-publish-date {
-	font-size: 16px;
-	line-height: 1.565;
-	opacity: 0.68;
+  font-size: 16px;
+  line-height: 1.565;
+  opacity: 0.68;
 }
 
 .entry-content {
@@ -687,80 +687,80 @@ h1, h2, h3, h4, h5, h6 {
 /*
 
   6.0 TYPESET
-	---
-	This class is used to "activate" the typesetting rules for
-	post and page content.
+  ---
+  This class is used to "activate" the typesetting rules for
+  post and page content.
 
-	In CSS, to target a child element in the corresponding markup, you just add
-	it after the parent element or classname with a space between. An example is
-	less confusing.
+  In CSS, to target a child element in the corresponding markup, you just add
+  it after the parent element or classname with a space between. An example is
+  less confusing.
 
-	.red p { color: red }
+  .red p { color: red }
 
-	<div class="red">This text is not red</div>
-	<div class="red"><p>This text is red</p></div>
+  <div class="red">This text is not red</div>
+  <div class="red"><p>This text is red</p></div>
 
-	The CSS rule is ultimately targeting <p> tags within the "red" class,
-	not the "red" class itself.
+  The CSS rule is ultimately targeting <p> tags within the "red" class,
+  not the "red" class itself.
 
-	So adding the "typeset" class to a wrapping element (like a <div>) will then
-	enable all of these styling rules below.
+  So adding the "typeset" class to a wrapping element (like a <div>) will then
+  enable all of these styling rules below.
 */
 
 .typeset p,
 .typeset li {
-	font-family: "IBMPlexSerif", Georgia, serif;
-	font-size: 18px;
-	line-height: 1.6;
+  font-family: "IBMPlexSerif", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .typeset a {
-	padding-bottom: 2px;
-	margin-bottom: -2px;
-	border-bottom: 2px solid rgba(30, 31, 34, 0.1);
+  padding-bottom: 2px;
+  margin-bottom: -2px;
+  border-bottom: 2px solid rgba(30, 31, 34, 0.1);
 }
 .typeset a:hover,
 .typeset a:focus {
-	border-bottom-color: rgba(30, 31, 34, 0.15);
+  border-bottom-color: rgba(30, 31, 34, 0.15);
 }
 
 /*
   With how this theme is setup, <h1> should never be used within
-	.typeset (i.e. in the post body), but if it is it'll be matched
-	to the <h2> style.
+  .typeset (i.e. in the post body), but if it is it'll be matched
+  to the <h2> style.
 */
 .typeset h1,
 .typeset h2 {
-	font-size: 23px;
-	font-weight: 600;
-	line-height: 1.4;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .typeset h3 {
-	font-size: 21px;
-	font-weight: 600;
-	line-height: 1.4;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .typeset h4 {
   font-size: 17px;
-	font-weight: 900;
-	line-height: 1.4;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .typeset h5 {
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 1.4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .typeset h6 {
-	font-size: 18px;
-	font-weight: 400;
-	font-style: italic;
-	line-height: 1.4;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
 }
 
 .typeset p,
@@ -770,7 +770,7 @@ h1, h2, h3, h4, h5, h6 {
 .typeset pre,
 .typeset div,
 .typeset form {
-	margin-top: 17px;
+  margin-top: 17px;
 }
 
 .typeset h1,
@@ -779,137 +779,137 @@ h1, h2, h3, h4, h5, h6 {
 .typeset h4,
 .typeset h5,
 .typeset h6 {
-	margin-top: calc(18px * 1.5 * 1.5);
+  margin-top: calc(18px * 1.5 * 1.5);
 }
 
 .typeset em,
 .typeset i {
-	font-family: "IBMPlexSerif", Georgia, serif;
-	font-style: italic;
+  font-family: "IBMPlexSerif", Georgia, serif;
+  font-style: italic;
 }
 
 .typeset strong,
 .typeset b {
-	font-family: "IBMPlexSerif", Georgia, serif;
-	font-weight: bold;
+  font-family: "IBMPlexSerif", Georgia, serif;
+  font-weight: bold;
 }
 
 /* Excerpts */
 
 .typeset blockquote {
-	padding: 18px;
-	background-color: rgba(30, 31, 34, 0.05);
+  padding: 18px;
+  background-color: rgba(30, 31, 34, 0.05);
 }
 .typeset blockquote p {
-	font-size: 16px;
+  font-size: 16px;
 }
 .typeset blockquote > p:first-child {
-	margin-top: 0
+  margin-top: 0
 }
 @media (min-width: 640px) {
-	.typeset blockquote {
-		padding: 28px;
-	}
+  .typeset blockquote {
+    padding: 28px;
+  }
 }
 
 /* Code samples */
 
 .typeset pre {
-	padding: 18px;
-	overflow: scroll;
-	font-size: 15px;
-	/* Monospace font stack */
-	font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
-	line-height: 1.656;
-	background-color: rgba(30, 31, 34, 0.05);
+  padding: 18px;
+  overflow: scroll;
+  font-size: 15px;
+  /* Monospace font stack */
+  font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
+  line-height: 1.656;
+  background-color: rgba(30, 31, 34, 0.05);
 }
 .typeset pre p,
 .typeset pre code {
-	font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
-	font-size: 15px;
-	line-height: 1.656;
+  font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
+  font-size: 15px;
+  line-height: 1.656;
 }
 
 .typeset code {
-	padding: 4px;
-	margin: -2px 0;
-	font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
-	font-size: 15px;
-	color: steelblue;
-	background-color: rgba(30, 144, 255, 0.12);
-	border-radius: 4px;
+  padding: 4px;
+  margin: -2px 0;
+  font-family: "IBMPlexMono", "Roboto Mono", "Source Code Pro", "Menlo", "Consolas", "Liberation Mono", monospace;
+  font-size: 15px;
+  color: steelblue;
+  background-color: rgba(30, 144, 255, 0.12);
+  border-radius: 4px;
 }
 .typeset pre code {
-	/* Turn "off" text and background color if used in <pre> block */
-	color: #1e1f22;
-	background-color: transparent
+  /* Turn "off" text and background color if used in <pre> block */
+  color: #1e1f22;
+  background-color: transparent
 }
 
 .typeset ul {
-	list-style-type: square;
+  list-style-type: square;
 }
 .typeset ol {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 .typeset li {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
 .typeset sup {
-	margin-left: 1px;
-	position: relative;
-	top: 1px;
-	font-size: 54%;
-	line-height: 100%;
-	vertical-align: text-top;
-	opacity: 0.68;
+  margin-left: 1px;
+  position: relative;
+  top: 1px;
+  font-size: 54%;
+  line-height: 100%;
+  vertical-align: text-top;
+  opacity: 0.68;
 }
 
 .typeset hr {
-	display: block;
-	width: 25px;
-	height: 2px;
-	margin-top: 48px;
-	margin-right: 0;
-	margin-bottom: 28px;
-	margin-left: 0;
-	border: 0;
-	border-bottom: 5px dotted #1e1f22;
-	background-color: transparent;
+  display: block;
+  width: 25px;
+  height: 2px;
+  margin-top: 48px;
+  margin-right: 0;
+  margin-bottom: 28px;
+  margin-left: 0;
+  border: 0;
+  border-bottom: 5px dotted #1e1f22;
+  background-color: transparent;
 }
 @media (min-width: 640px) {
-	.typeset hr {
-		width: 30px;
-		border-bottom-width: 6px;
-	}
+  .typeset hr {
+    width: 30px;
+    border-bottom-width: 6px;
+  }
 }
 
 
 /*
   6.1 Images
-	---
-	The classes are automatically inserted via WordPress depending on
-	how you choose to align them.
+  ---
+  The classes are automatically inserted via WordPress depending on
+  how you choose to align them.
 */
 
 .typeset img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-	margin-top: 17px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 17px;
 }
 .typeset img.aligncenter {
-	margin: 17px auto;
+  margin: 17px auto;
 }
 @media (min-width: 640px) {
-	.typeset img.alignright {
-		margin: 0 0 17px 20px;
-		float: right;
-	}
-	.typeset img.alignleft {
-		margin: 0 20px 17px 0;
-		float: left;
-	}
+  .typeset img.alignright {
+    margin: 0 0 17px 20px;
+    float: right;
+  }
+  .typeset img.alignleft {
+    margin: 0 20px 17px 0;
+    float: left;
+  }
 }
 
 
@@ -919,42 +919,42 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .typeset label {
-	display: block;
-	margin-top: 17px;
-	/*
-	  System font, if not defined explicitly would be overwritten as a
-		child of a <p> tag.
-	*/
-	font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
-	color: rgba(30, 31, 34, 0.5);
+  display: block;
+  margin-top: 17px;
+  /*
+    System font, if not defined explicitly would be overwritten as a
+    child of a <p> tag.
+  */
+  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  color: rgba(30, 31, 34, 0.5);
 }
 
 .typeset input,
 .typeset textarea {
-	width: 100%;
-	max-width: 540px;
-	padding: 10px 7px;
-	margin-top: 6px;
-	/*
-	  Setting input font stack explicitly, some browsers will use a
-		monospaced font as the default otherwise.
-	*/
-	font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	line-height: 1.125;
-	border: 2px solid rgba(30, 31, 34, 0.1);
-	border-radius: 5px;
+  width: 100%;
+  max-width: 540px;
+  padding: 10px 7px;
+  margin-top: 6px;
+  /*
+    Setting input font stack explicitly, some browsers will use a
+    monospaced font as the default otherwise.
+  */
+  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.125;
+  border: 2px solid rgba(30, 31, 34, 0.1);
+  border-radius: 5px;
 }
 .typeset textarea {
-	min-height: 76px;
-	padding: 5px 7px;
-	line-height: 1.4;
+  min-height: 76px;
+  padding: 5px 7px;
+  line-height: 1.4;
 }
 .typeset input:focus,
 .typeset textarea:focus {
-	outline: 0;
-	border-color: deeppink;
+  outline: 0;
+  border-color: deeppink;
 }
 
 .typeset input::placeholder,
@@ -970,44 +970,44 @@ h1, h2, h3, h4, h5, h6 {
 */
 
 .typeset table {
-	display: table;
-	width: 100%;
-	table-layout: fixed;
-	margin-top: 23px;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  margin-top: 23px;
 }
 
 .typeset caption {
-	padding: 10px 0;
+  padding: 10px 0;
   font-size: 17px;
-	font-weight: 900;
-	text-align: left;
-	border-bottom: 2px solid rgba(30, 31, 34, 0.4);
+  font-weight: 900;
+  text-align: left;
+  border-bottom: 2px solid rgba(30, 31, 34, 0.4);
 }
 
 .typeset th {
   padding: 10px 0;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 1.4;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	text-align: left;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
 }
 .typeset td {
   padding: 7px 0;
-	font-size: 17px;
-	line-height: 1.4;
-	border-top: 1px solid rgba(30, 31, 34, 0.1);
+  font-size: 17px;
+  line-height: 1.4;
+  border-top: 1px solid rgba(30, 31, 34, 0.1);
 }
 
 /*
   Overrides for larger screens.
-	When the viewport is equal to or greater than 960px the font size is
-	increased by 1px.
+  When the viewport is equal to or greater than 960px the font size is
+  increased by 1px.
 */
 @media (min-width: 960px) {
-	.typeset p,
-	.typeset li { font-size: 19px; line-height: 1.65; }
+  .typeset p,
+  .typeset li { font-size: 19px; line-height: 1.65; }
 
   .typeset h1, .typeset h2 { font-size: 24px; }
   .typeset h3 { font-size: 22px; }
@@ -1018,13 +1018,13 @@ h1, h2, h3, h4, h5, h6 {
   .typeset blockquote p { font-size: 17px; }
 
   .typeset pre,
-	.typeset pre p,
-	.typeset pre code { font-size: 16px; }
+  .typeset pre p,
+  .typeset pre code { font-size: 16px; }
   .typeset code { font-size: 16px; }
 
   .typeset caption { font-size: 18px; }
-	.typeset th { font-size: 15px; }
-	.typeset td { font-size: 18px; }
+  .typeset th { font-size: 15px; }
+  .typeset td { font-size: 18px; }
 }
 
 
@@ -1032,14 +1032,14 @@ h1, h2, h3, h4, h5, h6 {
 /*
 
   7.0 GENERIC CLASSES
-	---
+  ---
   These are generic classes that can be used as needed.
-	We use the "show" class to display the main navigation menu on mobile
-	when the menu icon is tapped.
+  We use the "show" class to display the main navigation menu on mobile
+  when the menu icon is tapped.
 */
 
 .hide {
-	width: 1px;
+  width: 1px;
   height: 1px;
   position: absolute;
   overflow: hidden;
@@ -1047,9 +1047,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .show {
-	width: auto;
-	height: auto;
-	position: inherit;
-	overflow: visible;
-	clip: auto;
+  width: auto;
+  height: auto;
+  position: inherit;
+  overflow: visible;
+  clip: auto;
 }
