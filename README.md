@@ -1,6 +1,6 @@
 # Basik
 
-Basik is a WordPress theme for leaners.
+Basik is a WordPress theme for learners.
 
 ### Introduction
 
