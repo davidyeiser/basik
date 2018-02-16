@@ -9,7 +9,7 @@ License:     GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-  
+
 
 /*
 
@@ -328,8 +328,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: -10px;
   padding: 10px;
   position: absolute;
-  right: 9%;
-  top: 22px;
+  right: 0;
+  top: 0;
   z-index: 1;
 }
 /*
