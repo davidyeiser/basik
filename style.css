@@ -183,10 +183,6 @@ a:hover, a:focus {
   background-color: #1e1f22;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizelegibility
-}
-
 
 /*
   1.1 Layout
