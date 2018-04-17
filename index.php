@@ -76,7 +76,7 @@
                 <header class="preview-entry-header">
                   <a class="entry-link" href="<?php the_permalink(); ?>" title="Go to post">
                     <h2 class="preview-title title"><?php the_title(); ?></h2>
-                    <time class="preview-publish-date" datetime="<?php echo get_post_time('c', true); ?>"><?php the_time('M j/y'); ?></time>
+                    <time class="preview-publish-date" datetime="<?php echo get_post_time('c', true); ?>"><?php the_time('M'); ?>&nbsp;<?php the_time('j/y'); ?></time>
                   </a>
                 </header>
 

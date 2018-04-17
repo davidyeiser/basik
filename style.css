@@ -325,7 +325,7 @@ a:hover, a:focus {
   padding: 10px;
   position: absolute;
   right: 0;
-  top: 0;
+  top: -2px;
   z-index: 1;
 }
 /*
