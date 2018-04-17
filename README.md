@@ -12,13 +12,13 @@ It’s a complete and functioning theme, but it’s very bare bones when it come
 
 ### Design
 
-The design is loosely based on a prior version of my personal site, [davidyeiser.com](https://davidyeiser.com/). It uses [IBM’s Plex Serif](https://github.com/ibm/type) for body copy and IBM Plex Mono when a monospaced font is required. Elsewhere it uses the system sans serif typeface.
+The design is loosely based on a prior version of my personal site, [davidyeiser.com](https://davidyeiser.com/). It uses [IBM’s Plex Serif](https://github.com/ibm/type) for body copy and IBM Plex Mono when a monospaced font is required. Elsewhere it uses the system sans serif typeface. Screenshots of the theme are shown below.
 
 ### License
 
 The theme, like WordPress, is licensed under the [GPL](http://www.gnu.org/licenses/gpl-2.0.html) with the exception of IBM’s Plex fonts, those are under the [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
 
-### Screenshots
+---
 
 ![Typical desktop view of the theme’s home page](https://davidyeiser.com/static/images/github/basik-screenshot-desktop-home.png)
 
