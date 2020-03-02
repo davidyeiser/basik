@@ -20,10 +20,10 @@ The theme, like WordPress, is licensed under the [GPL](http://www.gnu.org/licens
 
 ---
 
-![Typical desktop view of the theme’s home page](https://davidyeiser.com/static/images/github/basik-screenshot-desktop-home.png)
+![Typical desktop view of the theme’s home page](https://davidyeiser.com/images/general/basik-screenshot-desktop-home.png)
 
-![Typical desktop view of an example page showing paragraphs of text](https://davidyeiser.com/static/images/github/basik-screenshot-desktop-page-content.png)
+![Typical desktop view of an example page showing paragraphs of text](https://davidyeiser.com/images/general/basik-screenshot-desktop-page-content.png)
 
-![Typical desktop view of the bottom of the example page showing the footer and a table and form with text inputs](https://davidyeiser.com/static/images/github/basik-screenshot-desktop-page-content-bottom.png)
+![Typical desktop view of the bottom of the example page showing the footer and a table and form with text inputs](https://davidyeiser.com/images/general/basik-screenshot-desktop-page-content-bottom.png)
 
-![Theme preview of home page and example page on mobile devices](https://davidyeiser.com/static/images/github/basik-mobile-device-preview.jpg)
+![Theme preview of home page and example page on mobile devices](https://davidyeiser.com/images/general/basik-mobile-device-preview.jpg)
