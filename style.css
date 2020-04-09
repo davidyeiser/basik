@@ -344,6 +344,7 @@ a:hover, a:focus {
 */
 
 .site-header {
+  padding-top: 24px;
   position: relative;
 }
 
@@ -357,8 +358,6 @@ a:hover, a:focus {
   */
   margin: -10px;
   padding: 10px;
-  position: relative;
-  top: 22px;
   font-size: 18px;
   font-weight: 900;
   line-height: 1.4;
@@ -381,7 +380,7 @@ a:hover, a:focus {
   padding: 10px;
   position: absolute;
   right: 0;
-  top: -2px;
+  top: 2px;
   z-index: 1;
 }
 /*
@@ -489,7 +488,7 @@ a:hover, a:focus {
 }
 
 .main-nav-list {
-  padding-top: 48px;
+  padding-top: 14px;
 }
 .main-nav-list li {
   line-height: 1.565;
@@ -500,9 +499,6 @@ a:hover, a:focus {
   opacity: 0.25;
 }
 @media (min-width: 960px) {
-  .main-nav-list {
-    padding-top: 56px;
-  }
   .main-nav-list li {
     margin-left: 20px;
   }
