@@ -1030,8 +1030,7 @@ a:hover, a:focus {
   ---
 */
 
-.typeset table,
-.typeset figure table {
+.typeset table {
   display: table;
   width: 100%;
   table-layout: fixed;
