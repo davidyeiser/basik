@@ -316,12 +316,6 @@ a:hover, a:focus {
     margin-left: calc(50% - (720px / 2) - 18px);
   }
 }
-@media (min-width: 1680px) {
-  .measure {
-    width: 53.5916824197%;
-    margin-left: calc(50% - (720px / 2) - 18px);
-  }
-}
 
 
 /*
@@ -364,8 +358,6 @@ a:hover, a:focus {
   margin: -10px;
   padding: 10px;
   position: relative;
-  /* To match .frame edge */
-  left: calc((100% - 82%) / 2);
   top: 22px;
   font-size: 18px;
   font-weight: 900;
@@ -379,19 +371,6 @@ a:hover, a:focus {
 .identity:focus {
   /* RGB color value for CSS keyword 'navy' */
   background-color: rgba(0, 0, 128, 0.05);
-}
-@media (min-width: 960px) {
-  .identity {
-    max-width: 140px;
-    position: fixed;
-    left: 60px;
-    top: 56px;
-  }
-}
-@media (min-width: 1680px) {
-  .identity {
-    left: 84px;
-  }
 }
 
 .menu-control {
@@ -887,6 +866,13 @@ a:hover, a:focus {
   }
 }
 
+.typeset cite {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #5e5f62;
+}
+
 /* Code samples */
 
 .typeset pre {
@@ -1000,7 +986,7 @@ a:hover, a:focus {
     System font, if not defined explicitly would be overwritten as a
     child of a <p> tag.
   */
-  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Helvetica, Arial, sans-serif;
   color: rgba(30, 31, 34, 0.5);
 }
 
@@ -1014,7 +1000,7 @@ a:hover, a:focus {
     Setting input font stack explicitly, some browsers will use a
     monospaced font as the default otherwise.
   */
-  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.125;
@@ -1044,7 +1030,8 @@ a:hover, a:focus {
   ---
 */
 
-.typeset table {
+.typeset table,
+.typeset figure table {
   display: table;
   width: 100%;
   table-layout: fixed;
