@@ -70,6 +70,83 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 
+/*
+
+  ii. Webfonts
+	---
+	This theme uses "custom" fonts (called webfonts) as part of the design.
+  What this means is visitors likely will not have these fonts installed
+  on their computer, so we need to load them as part of the website so
+  the styles below can reference theme.
+
+  This is done using @font-face. With @font-face we specify what the
+  name of the font family should be (that is, the name that is
+  referenced with font-family later on in the styles to access the
+  custom font), the src path to the fonts and then the font-weight
+  and font-style for the font.
+
+  Note how the font-family for each of the four serif fonts is the same.
+  The specific font is keyed from the font-style and font-weight
+  properties. So when you set a bold serif for example the font-family
+  will be "IBMPlexSerif" and the font-weight will be set to bold and
+  the font style to italic. This is what will tell the CSS to load the
+  IBMPLexSerif-SemiboldItalic font.
+
+  Overall, don't worry if you don't fully understand this section.
+  Mastering custom webfonts is not necessary at this point.
+
+  Source
+
+  These fonts were downloaded from Google Fonts:
+  - https://fonts.google.com/specimen/IBM+Plex+Serif
+  - https://fonts.google.com/specimen/IBM+Plex+Mono
+
+  And the webfonts generated with Font Squirrel's Webfont Generator:
+  - https://www.fontsquirrel.com/tools/webfont-generator
+
+*/
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('webfonts/IBMPlexSerif-Regular.woff2') format('woff2'),
+       url('webfonts/IBMPlexSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('webfonts/IBMPlexSerif-Italic.woff2') format('woff2'),
+       url('webfonts/IBMPlexSerif-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('webfonts/IBMPlexSerif-Semibold.woff2') format('woff2'),
+       url('webfonts/IBMPlexSerif-Semibold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBMPlexSerif';
+  src: url('webfonts/IBMPlexSerif-SemiboldItalic.woff2') format('woff2'),
+       url('webfonts/IBMPlexSerif-SemiboldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'IBMPlexMono';
+  src: url('webfonts/IBMPlexMono-Regular.woff2') format('woff2'),
+       url('webfonts/IBMPlexMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 
 /*
 
@@ -152,7 +229,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   /* This specifics the default font to be the operating system's system font */
-  font-family: -apple-system-body, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Ubuntu", "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: normal;
@@ -789,6 +866,8 @@ a:hover, a:focus {
   font-family: "IBMPlexSerif", Georgia, serif;
   font-weight: bold;
 }
+
+
 
 /* Excerpts */
 
