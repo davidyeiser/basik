@@ -1,7 +1,9 @@
 <header class="site-header">
-  <a class="identity" href="<?php echo get_home_url(); ?>" itemProp="url" itemScope="itemscope" itemType="https://schema.org/Brand"><?php echo get_bloginfo('name'); ?></a>
-
   <div class="frame">
+    <div class="measure">
+      <a class="identity" href="<?php echo get_home_url(); ?>" itemProp="url" itemScope="itemscope" itemType="https://schema.org/Brand"><?php echo get_bloginfo('name'); ?></a>
+    </div>
+
     <?php if (has_nav_menu('main_navigation')) : ?>
       <a id="js-menu-control" class="js-menu-control menu-control" href="#main-nav" onclick="return false;"><span class="hide">Menu</span></a>
 
