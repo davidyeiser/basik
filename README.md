@@ -16,10 +16,6 @@ It’s a complete and functioning theme, but it’s very bare bones when it come
 
 [IBM’s Plex Serif](https://github.com/ibm/type) is used for body copy and IBM Plex Mono for monospace. Elsewhere the system sans serif typeface is used.
 
-
-
-[**View screenshots of the theme**](https://davidyeiser.com/projects/basik-wordpress-theme).
-
 ### License
 
 The theme, like WordPress, is licensed under the [GPL](http://www.gnu.org/licenses/gpl-2.0.html) with the exception of IBM’s Plex fonts, those are under the [SIL Open Font License](http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL).
