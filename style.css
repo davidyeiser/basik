@@ -108,40 +108,35 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 @font-face {
   font-family: 'IBMPlexSerif';
-  src: url('webfonts/IBMPlexSerif-Regular.woff2') format('woff2'),
-       url('webfonts/IBMPlexSerif-Regular.woff') format('woff');
+  src: url('webfonts/IBMPlexSerif-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBMPlexSerif';
-  src: url('webfonts/IBMPlexSerif-Italic.woff2') format('woff2'),
-       url('webfonts/IBMPlexSerif-Italic.woff') format('woff');
+  src: url('webfonts/IBMPlexSerif-Italic.woff2') format('woff2');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBMPlexSerif';
-  src: url('webfonts/IBMPlexSerif-Semibold.woff2') format('woff2'),
-       url('webfonts/IBMPlexSerif-Semibold.woff') format('woff');
+  src: url('webfonts/IBMPlexSerif-Semibold.woff2') format('woff2');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'IBMPlexSerif';
-  src: url('webfonts/IBMPlexSerif-SemiboldItalic.woff2') format('woff2'),
-       url('webfonts/IBMPlexSerif-SemiboldItalic.woff') format('woff');
+  src: url('webfonts/IBMPlexSerif-SemiboldItalic.woff2') format('woff2');
   font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'IBMPlexMono';
-  src: url('webfonts/IBMPlexMono-Regular.woff2') format('woff2'),
-       url('webfonts/IBMPlexMono-Regular.woff') format('woff');
+  src: url('webfonts/IBMPlexMono-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }

@@ -12,7 +12,11 @@ It’s a complete and functioning theme, but it’s very bare bones when it come
 
 ### Design
 
-The design is loosely based on a prior version of my personal site, [davidyeiser.com](https://davidyeiser.com/). It uses [IBM’s Plex Serif](https://github.com/ibm/type) for body copy and IBM Plex Mono when a monospaced font is required. Elsewhere it uses the system sans serif typeface.
+![Screenshot of a blog post with example content: text, headlines, an image, table, and quote.](https://davidyeiser.com/images/projects/basik-theme-example-screenshot.jpg)
+
+[IBM’s Plex Serif](https://github.com/ibm/type) is used for body copy and IBM Plex Mono for monospace. Elsewhere the system sans serif typeface is used.
+
+
 
 [**View screenshots of the theme**](https://davidyeiser.com/projects/basik-wordpress-theme).
 
